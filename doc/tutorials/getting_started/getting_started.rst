@@ -61,6 +61,11 @@ The next command will configure your colcon workspace: ::
   cd ~/ws_moveit2
   colcon build --mixin release
 
+In case you receive an error with "mixin" (see also https://github.com/colcon/colcon-mixin-repository): ::
+
+  colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+  colcon mixin update default
+
 Source the colcon workspace: ::
 
   source ~/ws_moveit2/install/setup.bash
